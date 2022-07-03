@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_background"
+    android:gravity="bottom"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Navigation header"
+        android:paddingTop="8dp"
+        android:src="@drawable/tecno5" />
+
+    <TextView
+        android:id="@+id/emailTil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="6dp"
+        android:text="Clifford Ochieng"
+        android:textColor="#0E0E10"
+        android:textSize="29dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="info@ochieng.com"
+        android:textColor="#E83E13"
+        android:textSize="16dp"
+        android:textStyle="bold"
+       />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="22sp">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

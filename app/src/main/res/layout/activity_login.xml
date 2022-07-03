@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="Please login"
+                android:textSize="35sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtName"
+                    style="@style/Animation.Design.BottomSheetDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/login_background"
+                    android:drawablePadding="10dp"
+                    android:hint="Username"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="#020109"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/edtPwd"
+                    style="@style/Animation.Design.BottomSheetDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/login_background"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="#020109"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button"
+                android:text="Log in"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="No account register"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
